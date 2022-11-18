@@ -33,15 +33,15 @@ function getComputerChoice() {
 // check winner
 function checkWin(){
   if (computerChoice ===  userSelection ){
-    result = "It's a draw!"
+    result = "It's a draw 😐"
   } else if ( computerChoice === "paper" && userSelection === "rock"){
-    result = "Computer wins!"
+    result = "Computer wins 😟"
   } else if (computerChoice === "rock" &&  userSelection  === "scissors"){
-    result = "Computer wins!"
+    result = "Computer wins 😟"
   } else if (computerChoice === "scissors" &&  userSelection  === "paper"){
-      result = "Computer wins!"
+      result = "Computer wins 😟 "
   } else {
-     result = "you win!"
+     result = "you win! 😀"
   }
   resultEl.innerHTML = result;
   console.log(`winner :  ${result}`)

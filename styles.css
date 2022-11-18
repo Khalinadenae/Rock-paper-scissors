@@ -1,0 +1,58 @@
+
+.btn-container{
+    background-color: #E7B39E;
+    margin-left:auto;
+    margin-right:auto;
+     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding:40px;
+  }
+  body{
+    background-color: #F5E2C8;
+    font-family: 'Roboto Mono', monospace;
+  
+  }
+  button{
+  padding:15px;
+    border: transparent;
+    background-color: #D88373;
+    margin:20px;
+    width:200px;
+     margin-left:auto;
+    margin-right:auto;
+  }
+  
+  p { 
+  font-size:20px;
+    font-weight:100;
+    color: whitesmoke;
+  }
+  .fa{
+    font-size:50px;
+    color: #F5E2C8;
+  }
+  
+  #winner, #restart{
+    margin-left:auto;
+      margin-right:auto;
+    width:350px;
+    display:block;
+  }
+  
+  h1, h5{
+  text-align:center;
+    color:#BD1E1E;
+    font-weight: 800;
+  }
+  
+  button:hover{
+  transform: scale(1.2);
+    background-color:#BD1E1E;
+  }
+
+  #winner{
+    font-size: 60px;
+    color: #F5E2C8;
+  }

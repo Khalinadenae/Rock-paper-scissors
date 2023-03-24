@@ -6,6 +6,9 @@ let userSelection;
 let computerChoice;
 let result ;
 
+let wins = 0;
+let losses = 0; 
+
 // get user choice , start game 
 selections.forEach( selection => selection.addEventListener('click', (event) => {
   userSelection = event.target.id
@@ -36,13 +39,18 @@ function checkWin(){
     result = "It's a draw 😐"
   } else if ( computerChoice === "paper" && userSelection === "rock"){
     result = "Computer wins 😟"
+    losses +=1
   } else if (computerChoice === "rock" &&  userSelection  === "scissors"){
     result = "Computer wins 😟"
+    losses +=1
   } else if (computerChoice === "scissors" &&  userSelection  === "paper"){
       result = "Computer wins 😟 "
+      losses +=1
   } else {
      result = "you win! 😀"
+     wins += 1 
   }
   resultEl.innerHTML = result;
   console.log(`winner :  ${result}`)
+  console.log(`winnes : ${wins} | losses ${losses} `)
 }
